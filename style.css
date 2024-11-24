@@ -4,17 +4,24 @@ body, h1, p, ul {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+.p1 {
+      margin: 10px 0; 
+      padding: 0 10px; 
+  }
+}
 
 header {
     display: flex;
     align-items: center;
-    background-color:white;
-    color: white;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
+    justify-content: space-between;
 }
 
 .hamburger {
-  display: none;
+  display: none; 
   font-size: 30px; 
   cursor: pointer; 
   color: black;
@@ -23,14 +30,14 @@ header {
 
 @media (max-width: 768px) {
   .nav ul {
-      display: none;
-      flex-direction: column;
+      display: none; 
+      flex-direction: column; 
       background-color: rgb(181, 244, 218);
-      position: absolute; 
-      top: 50px;
+      position: absolute; /
+      top: 50px; 
       left: 0;
-      width: 100%;
-      z-index: 1000;
+      width: 100%; 
+      z-index: 1000; 
   }
   
   .nav ul.active {
@@ -64,7 +71,7 @@ header {
     display: inline-block;
     list-style: outside none none;
     margin: .5em 1em;
-    paddin: 0;
+    padding: 0;
   }
   
   .nav a {
@@ -86,7 +93,6 @@ header {
   }
   
   .nav a::before {
-    content: '';
     right: 0;
     top: 0;
     border-top: 3px solid #3E8914;
@@ -184,7 +190,11 @@ main p {
     border-left: 8px solid green;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
-  
+  @media (max-width: 768px) {
+    .box {
+        max-width: 90%; 
+    }
+}
   
   
   h1 {
